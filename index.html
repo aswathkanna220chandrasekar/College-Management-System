@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>College Management System</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h2>🎓 ABC College</h2>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#departments">Departments</a>
+                <a href="#faculty">Faculty</a>
+                <a href="#students">Students</a>
+                <a href="#events">Events</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+        <section id="home" class="hero">
+            <h1>Welcome to ABC College</h1>
+            <p>Learn Today, Lead Tomorrow</p>
+            <a href="#departments" class="btn">Explore Courses</a>
+        </section>
+        <section class="stats">
+            <div>
+                <h2>1500+</h2>
+                <p>Students</p>
+            </div>
+            <div>
+                <h2>100+</h2>
+                <p>Faculty Members</p>
+            </div>
+            <div>
+                <h2>10+</h2>
+                <p>Courses</p>
+            </div>
+            <div>
+                <h2>20+</h2>
+                <p>Years of Excellence</p>
+            </div>
+        </section>
+        <section id="departments">
+            <h2 class="title">Our Departments</h2>
+            <input type="text" id="search" placeholder="Search departments..." onkeyup="searchDepartments()">
+            <div class="cards" id="departmentList">
+                <div class="card">
+                    <h3>💻 Computer Science</h3>
+                    <p>Learn programming, software development, and AI.</p>
+                </div>
+                <div class="card">
+                    <h3>⚙️ Mechanical Engineering</h3>
+                    <p>Study machines, manufacturing, and engineering.</p>
+                </div>
+                <div class="card">
+                    <h3>⚡ Electrical Engineering</h3>
+                    <p>Learn electrical systems and power technology.</p>
+                </div>
+                <div class="card">
+                    <h3>📊 Commerce</h3>
+                    <p>Explore accounting, business, and finance.</p>
+                </div>
+                <div class="card">
+                    <h3>📈 Business Administration</h3>
+                    <p>Develop management and leadership skills.</p>
+                </div>
+                <div class="card">
+                    <h3>🔬 Science</h3>
+                    <p>Explore scientific concepts and research.</p>
+                </div>
+            </div>
+        </section>
+        <section id="faculty" class="light">
+            <h2 class="title">Our Faculty</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Dr. Ravi Kumar</h3>
+                    <p>Computer Science Professor</p>
+                    <p>Experience: 10 Years</p>
+                </div>
+                <div class="card">
+                    <h3>Mrs. Priya</h3>
+                    <p>Mathematics Professor</p>
+                    <p>Experience: 8 Years</p>
+                </div>
+                <div class="card">
+                    <h3>Mr. Arun</h3>
+                    <p>Commerce Professor</p>
+                    <p>Experience: 6 Years</p>
+                </div>
+            </div>
+        </section>
+        <section id="students">
+            <h2 class="title">Student Information</h2>
+            <div class="student-box">
+                <h3>Student Management</h3>
+                <p>View sample student records below.</p>
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Department</th>
+                    </tr>
+                    <tr>
+                        <td>101</td>
+                        <td>Arun Kumar</td>
+                        <td>Computer Science</td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>Priya Devi</td>
+                        <td>Commerce</td>
+                    </tr>
+                    <tr>
+                        <td>103</td>
+                        <td>Rahul</td>
+                        <td>Mechanical</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section id="events" class="light">
+            <h2 class="title">College Events</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>🎉 College Fest</h3>
+                    <p>Date: 15 November 2026</p>
+                    <p>Enjoy cultural programs and competitions.</p>
+                </div>
+                <div class="card">
+                    <h3>💻 Technical Symposium</h3>
+                    <p>Date: 20 November 2026</p>
+                    <p>Participate in coding and technical events.</p>
+                </div>
+                <div class="card">
+                    <h3>🏆 Sports Day</h3>
+                    <p>Date: 25 November 2026</p>
+                    <p>Show your talent in sports competitions.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2 class="title">Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Enter your name" required>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <textarea id="message" placeholder="Enter your message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="response"></p>
+        </section>
+        <footer>
+            <p>© 2026 ABC College. All Rights Reserved.</p>
+            <p>Designed using HTML, CSS, and JavaScript</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
